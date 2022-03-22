@@ -4,7 +4,16 @@ void main() {
   runApp(const MyApp());
 }
 
-void test() {}
+void test() {
+  String? name = null;
+  if (name == null) {
+    print('Nameless');
+  } else {
+    print(name);
+  }
+  List<String?> bob = ['yo', null];
+  print(bob);
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
